@@ -1,704 +1,835 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en-US"> <!--<![endif]-->
-<head>
+<html lang="en">
+  <head>
+    <!-- META DATA -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <meta name="description" content="Treble theme">
+    <title>Treble</title>
 
-<!-- Meta Tags -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="static/assets/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/assets/images/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/assets/images/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="static/assets/images/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="static/assets/images/ico/favicon.png">
 
-<title>Francesco Ferrari</title>   
 
-<meta name="description" content="" /> 
-
-<!-- Mobile Specifics -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="HandheldFriendly" content="true"/>
-<meta name="MobileOptimized" content="320"/>   
-
-<!-- Mobile Internet Explorer ClearType Technology -->
-<!--[if IEMobile]>  <meta http-equiv="cleartype" content="on">  <![endif]-->
-
-<!-- Bootstrap -->
-<link href="static/_include/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Main Style -->
-<link href="static/_include/css/main.css" rel="stylesheet">
-
-<!-- Supersized -->
-<link href="static/_include/css/supersized.css" rel="stylesheet">
-<link href="static/_include/css/supersized.shutter.css" rel="stylesheet">
-
-<!-- FancyBox -->
-<link href="static/_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-
-<!-- Font Icons -->
-<link href="static/_include/css/fonts.css" rel="stylesheet">
-
-<!-- Shortcodes -->
-<link href="static/_include/css/shortcodes.css" rel="stylesheet">
-
-<!-- Responsive -->
-<link href="static/_include/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="static/_include/css/responsive.css" rel="stylesheet">
-
-<!-- Custom CSS -->
-<link href="static/_include/css/custom.css" rel="stylesheet">
-
-<!-- Google Font -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
-
-<!-- Fav Icon -->
-<link rel="shortcut icon" href="#">
-
-<link rel="apple-touch-icon" href="#">
-<link rel="apple-touch-icon" sizes="114x114" href="#">
-<link rel="apple-touch-icon" sizes="72x72" href="#">
-<link rel="apple-touch-icon" sizes="144x144" href="#">
-
-<!-- Modernizr -->
-<script src="static/_include/js/modernizr.js"></script>
-
-<!-- Analytics -->
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'YOUR ID']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-<!-- End Analytics -->
+    <!-- TREBLE STYLESHEETS -->
+    <!-- <link rel="stylesheet/less" href="assets/style/bootstrap.less" media="all" /> -->
+    <link rel="stylesheet" href="static/assets/style/bootstrap.css" type="text/css" />
+    
+    <!-- GOOGLE WEB FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,700,600,300,800' rel='stylesheet' type='text/css'>
 </head>
-
-
 <body>
+    <!-- NAVIGATION -->
+    <nav class="fixed-top" id="navigation">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="span12 center">
+                    <!-- LOGO -->
+                    <a class="brand pull-left" href="./">
+                        <img src="static/assets/images/logo.png" alt="Treble">
+                    </a>
+                    <!-- END LOGO -->
 
-<!-- This section is for Splash Screen -->
-<div class="ole">
-<section id="jSplash">
-	<div id="circle"></div>
-</section>
-</div>
-<!-- End of Splash Screen -->
-
-<!-- Homepage Slider -->
-<div id="home-slider">  
-    <div class="overlay"></div>
-
-    <div class="container">
-        <div class="row">
-            <div class="span12">
-                <div class="slider-text">
-                    <div id="slidecaption"></div>
+                    <!-- MOBILE MENU BUTTON -->
+                    <div class="mobile-menu" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </div>
+                    <!-- END MOBILE MENU BUTTON -->
+                    
+                    <!-- MAIN MENU -->
+                    <ul id="main-menu" class="nav-collapse collapse">
+                        <li><a href="#page-welcome">Home</a></li>
+                        <li><a href="#page-work">Work</a></li>
+                        <li><a href="#page-features">Features</a></li>
+                        <li><a href="#page-about">About</a></li>
+                        <li><a href="#page-blog">Blog</a></li>
+                        <li><a href="#page-contact">Contact</a></li>
+                    </ul>
+                    <!-- END MAIN MENU -->
+                    
+                    <!-- SOCIAL ICONS -->
+                    <div class="social-icons hover-big pull-right">
+                        <a href="#" class="sicon-facebook"><i>Facebook</i></a>
+                        <a href="#" class="sicon-twitter"><i>Twitter</i></a>
+                        <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
+                        <a href="#" class="sicon-youtube"><i>Youtube</i></a>
+                        <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
+                    </div>
+                    <!-- END SOCIAL ICONS -->
                 </div>
             </div>
         </div>
-    </div>   
+    </nav>
+    <!-- END NAVIGATION -->
     
-    <div class="control-nav">
-        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
-        <ul id="slide-list"></ul>
-        
-        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
-    </div>
-</div>
-<!-- End Homepage Slider -->
-
-<!-- Header -->
-<header>
-    <div class="sticky-nav">
-    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-        
-       <!-- <div id="logo">
-        	<a id="goUp" href="#home-slider" title="Chakra | Responsive One Page Template">Chakra Template</a>
-        </div> -->
-        
-        <nav id="menu">
-        	<ul id="menu-nav">
-            	<li class="current"><a href="#home-slider">Home</a></li>
-                <li><a href="#work">About Me</a></li>
-                <!--<li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="blog.html" class="external">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-				<li><a href="shortcodes.html" class="external">Shortcodes</a></li>-->
-            </ul>
-        </nav>
-        
-    </div>
-</header>
-<!-- End Header -->
-
-<!-- Our Work Section -->
-<div id="work" class="page">
-	<div class="container">
-    	<!-- Title Page -->
-        <div class="row">
-            <div class="span12">
-                <div class="title-page">
-                    <h2 class="title">About Me</h2>
-                    
-                    
-                    <div class="page-description">
-                		<p>My name is Francesco Ferrari. I am an international student studying Electronic and Electrical Engineering with Nanotechnology at University College London (UCL). I am originally from Italy but I have been abroad since I was seventeen.</p>
-                        <p>I am currently working as an intern at the Cisco Systems headquarters in San Jose. My main occupation here is web development, specifically designing apps that run on Openstack, a cloud technology which Cisco is investing a lot in.</p>
-                        <p>I really enjoy the enterpreneurial spirit here in the Bay Area and I am trying to get involved as much as possible taking part of Startup Weekends and Hackthons. I really like the diverse and interesting pool of people that are involved in the local startup universe and tech industry environment.</p>
-                	</div>
-                
-                </div>    
+    <!-- PAGE | WELCOME -->
+    <div class="pages white paralax" id="page-welcome">
+        <div class="overlay"></div>
+        <!-- Centralized content -->
+        <div class="centralized">
+            <div class="container">
+                <div class="row-fluid">
+                    <div class="span12 center">
+                        <!-- Animated logo -->
+                        <div class="logo">
+                            <div class="scrollNormal">
+                                <a href="#page-work">
+                                    <img src="static/assets/images/pages/welcome/logo_welcome.png" width="140" height="140" alt="Treble">
+                                </a>
+                            </div>
+                            <div class="scrollDown">
+                                <a href="#page-work">
+                                    <img src="static/assets/images/pages/welcome/logo2_welcome.png" width="140" height="140" alt="Treble">
+                                </a>
+                            </div> 
+                        </div>
+                        
+                        <div class="line-divider" id="welcome-messages">
+                            <ul class="slides">
+                                <li>
+                                    <h1>Hello Treble</h1>
+                                </li>
+                                <li>
+                                    <h1>Fresh & Clean</h1>
+                                </li>
+                                <li>
+                                    <h1>Creative & Fun</h1>
+                                </li>
+                            </ul>
+                        </div>
+                        <p>One page responsive HTML5 template.</p>
+                        <div class="social-icons sicon-white bordered">
+                            <a href="#" class="sicon-facebook"><i>Facebook</i></a>
+                            <a href="#" class="sicon-twitter"><i>Twitter</i></a>
+                            <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
+                            <a href="#" class="sicon-youtube"><i>Youtube</i></a>
+                            <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- End Title Page -->
-        
-        <!-- Portfolio Projects -->
-        <div class="row">
-        	<div class="span12">
-            	<!-- Filter -->
-                <nav id="options" class="work-nav">
-                    <ul id="filters" class="option-set" data-option-key="filter">
-                    	<li class="type-work">What I think, do and learn</li>
-                        <li><a href="#filter" data-option-value="*" class="selected">All </a></li>
-                        <li><a href="#filter" data-option-value=".work">Work</a></li>
-                        <li><a href="#filter" data-option-value=".interests">Interests</a></li>
-                        
-                        <li><a href="#filter" data-option-value=".studies">Studies</a></li>
+    </div>
+    <!-- END PAGE | Welcome -->
+   
+    <!-- PAGE | WORK -->
+    <div class="pages" id="page-work">
+        <div class="container">
+            <!-- Header -->
+            <header>
+                <h4 class="line-divider">Work</h4>
+                <h1>Portfolio</h1>
+                <!-- Short desciption about Work in general -->
+                <div class="row">
+                    <div class="span8 offset2">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                        </p>
+                    </div>
+                </div>
+                    
+                <!-- Sub menu -->
+                <!-- 
+                Params: 
+                    plugin-filter: Defines links for filtering.
+                -->
+                <nav class="submenu">
+                    <ul>
+                        <li>
+                            <a href="#" class="plugin-filter active" data-filter="all">All</a>
+                        </li>
+                        <li>
+                            <a href="#" class="plugin-filter" data-filter="typography">Typography</a>
+                        </li>
+                        <li>
+                            <a href="#" class="plugin-filter" data-filter="illustration">Illustration</a>
+                        </li>
+                        <li>
+                            <a href="#" class="plugin-filter" data-filter="branding">Branding</a>
+                        </li>
+                        <li>
+                            <a href="#" class="plugin-filter" data-filter="photography">Photography</a>
+                        </li>
                     </ul>
                 </nav>
-                <!-- End Filter -->
-            </div>
-            
-            <div class="span12">
-            	<div class="row">
-                	<section id="projects">
-                    	<ul id="thumbs">
-                        
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span4 studies">
-                                <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                                <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="University" href="static/_include/img/work/thumbs/ucl-570x570.jpg">
-                                    <span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="static/_include/img/work/thumbs/ucl-570x570.jpg" alt="I am currently a student at UCL. I achieved in being one of the top scorers of my course. I am involved also outside my main studies in extra curricular activities such a social enterprise started with my colleagues, The Engineering Pipeline.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span4 interests">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Travelling" href="static/_include/img/work/thumbs/la-570.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="static/_include/img/work/thumbs/la-570.jpg" alt="I really enjoy travelling. I have been to five continents and lived in 4 different countries. Travelling shaped the way I look at things, the way I approached to people. It gave me right open mindness necessary to face new challenges and environments.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span4 work">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Work" href="static/_include/img/work/thumbs/cisco-570.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="static/_include/img/work/thumbs/cisco-570.jpg" alt="I am currently working at Cisco as one year intern. My two projects consits in web development for applications to run on OpenStack and big data processing and analytics.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span4 studies">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Italy" href="static/_include/img/work/thumbs/italy-570.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="static/_include/img/work/thumbs/italy-570.jpg" alt="Italy and its heritage deeply influenced me. I am very attached to history of my country and the teaching that can be learnt from it. I frequented high school there, Liceo Scientifico G. Gandini. Beside many interesting courses I have also had the pleasure to take part in a project between my school and CERN for the construction of a cosmic ray detector.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span4 interests">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Architecture" href="static/_include/img/work/thumbs/wright-570.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="static/_include/img/work/thumbs/wright-570.jpg" alt="One of my main passion is architecture. I love how architecture is able to integrate all the synergies present in a physical location and link them with the trascendetal side of a place such as culture, philosophy, biology and history.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                       
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span4 interests">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Fencing" href="static/_include/img/work/thumbs/fencing-570.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="static/_include/img/work/thumbs/fencing-570.jpg" alt="Definitely fencing is the sport that I enjoy the most. In fencing technique and precision is more important than physical strength.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-							<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span4 studies">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Oklahoma" href="static/_include/img/work/thumbs/oklahoma-570.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="static/_include/img/work/thumbs/oklahoma-570.jpg" alt="I have spent one year in Oklahoma as an exchange student. As travelling also this experience deeply shaped the way I act today. My spirit of adaptability was under stress for a long period but I succeeded in getting the most out of it. Between the things I have done I was elected science president by the school, joined the Oklahoma Honor Society, participate in 2 musicals in the local theater and got second place in a rodeo.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-                            <!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span4 work">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Github" href="static/_include/img/work/thumbs/github-570.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="static/_include/img/work/thumbs/github-570.jpg" alt="Please, check out my newborn <a href='https://github.com/fraferra'>github account</a>.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-                            <!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span4 interests">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Start Ups" href="static/_include/img/work/thumbs/startup-570.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-search"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="static/_include/img/work/thumbs/startup-570.jpg" alt="StartUps are one of my passions. I am trying to get involved as much as possible in the Bay Area to start possibly a startup. The creativeness and innovation of the Bay Area is probably the most fertile environment, together with London, for startups.">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-                            <!-- Item Project and Filter Name -->
-                        	
-                        	<!-- End Item Project -->
-                        </ul>
-                    </section>
-                    
-            	</div>
-            </div>
-        </div>
-        <!-- End Portfolio Projects -->
-    </div>
-</div>
-<!-- End Our Work Section -->
-
-<!-- About Section -->
-<div id="about" class="page-alternate">
-<div class="container">
-    <!-- Title Page -->
- <!--   <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">About Us</h2>
-                <h3 class="title-description">Learn About our Team &amp; Culture.</h3>
+            </header>
+            <!-- End Header -->
                 
-                <div class="page-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. 
-                    Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. Duis in tortor scelerisque felis mattis imperdiet. Donec at libero tellus. 
-                    <a href="#">Suspendisse consectetur</a> consectetur bibendum. Pellentesque posuere, ligula volutpat elementum interdum, diam arcu elementum ipsum, vel ultricies est mauris ut nisi.</p>
-                </div>
-                
-            </div>
-        </div>
-    </div>-->
-    <!-- End Title Page -->
-    
-   <!-- <div class="row margin-40">
-    	<div class="span4">
-        	<h3>Our Culture</h3>
-			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. 
-            Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. </p>
-            
-            <p>Duis in tortor scelerisque felis mattis imperdiet. Donec at <a href="#">libero tellus</a>. Suspendisse consectetur consectetur bibendum.</p>
-        </div>
-        
-        <div class="span4">
-        	<h3>Our Method</h3>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut <strong>pretium nisl</strong> non justo condimentum id tincidunt nunc faucibus. 
-            Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. </p>
-            
-            <p>Duis in tortor scelerisque felis mattis imperdiet. Donec at libero tellus. Suspendisse consectetur consectetur bibendum.</p>
-        </div>
-        
-        <div class="span4">
-        	<h3>Our Skills</h3>
-            
-            <div class="progress-bar">
-                <div class="progress">
-                	<span class="field">Design</span>
-                    <span class="field-value">60%</span>
-                    <div class="bar" style="width: 60%;"></div>
-                </div>
-            </div>
-            
-            <div class="progress-bar">
-                <div class="progress">
-                	<span class="field">Development</span>
-                    <span class="field-value">75%</span>
-                    <div class="bar" style="width: 75%;"></div>
-                </div>
-            </div>
-            
-            <div class="progress-bar">
-                <div class="progress">
-                	<span class="field">UX/UI</span>
-                    <span class="field-value">33%</span>
-                    <div class="bar" style="width: 33%;"></div>
-                </div>
-            </div>
-            
-            <div class="progress-bar">
-                <div class="progress">
-                	<span class="field">Branding</span>
-                    <span class="field-value">100%</span>
-                    <div class="bar" style="width: 100%;"></div>
-                </div>
-            </div>    
-        </div>
-        
-    </div> -->
-    
-    <div class="sep">
-    	<span class="separator"></span>
-    </div>
-    
-    <!-- People -->
- <!--   <div class="row"> -->
-    	
-        <!-- Start Profile -->
-    <!--	<div class="span4 profile">
-        	<div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">CTO/Founder</span>
-                </div>
-                <img src="_include/img/profile/profile-01.jpg" alt="John Doe">
-            </div>
-            <h3 class="profile-name">John Doe</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
-            <div class="social">
-            	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-dribbble"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
-                </ul>
-            </div>
-        </div> -->
-        <!-- End Profile -->
-        
-        <!-- Start Profile -->
-    <!--	<div class="span4 profile">
-        	<div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Creative Director</span>
-                </div>
-                <img src="_include/img/profile/profile-02.jpg" alt="Jane Helf">
-            </div>
-            <h3 class="profile-name">Jane Helf</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
-            <div class="social">
-            	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-email"></i></a></li>
-                </ul>
-            </div>
-        </div> -->
-        <!-- End Profile -->
-        
-        <!-- Start Profile -->
-    <!--	<div class="span4 profile">
-        	<div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">Lead Designer</span>
-                </div>
-                <img src="_include/img/profile/profile-03.jpg" alt="Joshua Insanus">
-            </div>
-            <h3 class="profile-name">Joshua Insanus</h3>
-            <p class="profile-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat <a href="#">hendrerit dictum</a>. 
-            Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            	
-            <div class="social">
-            	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-linkedin"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-google-plus"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-vimeo"></i></a></li>
-                </ul>
-            </div>
-        </div> -->
-        <!-- End Profile -->
-        
-   <!-- </div> -->
-    <!-- End People --> 
-</div>
-</div>
-<!-- End About Section -->
-
-<!-- Big Blockquote -->
-<div class="big-quote page">
-	<div class="container">
-    	<div class="row">
-        	<div class="span12">
-            	<p>“Twenty years from now you will be more disappointed by the things that you didn't do than by the ones you did do.”</p>
-
-                <span class="font-icon-blockquote"><p>Mark Twain</p></span>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Big Blockquote -->
-
-<!-- Services Section -->
-<!--<div id="services" class="page-alternate">-->
-<!--<div class="container">-->
-    <!-- Title Page -->
-   <!-- <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">Services</h2>
-                <h3 class="title-description">The key to a successful network operation is to provide high quality services.</h3>
-                
-                <div class="page-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. 
-                    Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. Duis in tortor scelerisque felis mattis imperdiet. Donec at libero tellus. 
-                    <a href="#">Suspendisse consectetur</a> consectetur bibendum. Pellentesque posuere, ligula volutpat elementum interdum, diam arcu elementum ipsum, vel ultricies est mauris ut nisi.</p>
-                </div>
-                
-            </div>
-        </div>
-    </div>-->
-    <!-- End Title Page -->
-    
-    <!--<div class="row margin-40">
-    	<div class="span9">
-        	<h3>Our Technology</h3>
-			<p>Sed at odio ut arcu fringilla dictum eu eu nisl. Donec rutrum erat non arcu gravida porttitor. Nunc et magna nisi.Aliquam at erat in purus aliquet mollis. Fusce elementum velit vel dolor iaculis egestas. 
-            Maecenas ut nulla quis eros scelerisque posuere vel vitae nibh. Proin id condimentum sem. Morbi vitae dui in magna <a href="#">vestibulum suscipit</a> vitae vel nunc. Integer ut risus nulla.</p>
-            
-            <p>Malesuada tortor, nec scelerisque lorem mattis. Nunc et rutrum consetetur sadipscing elitr, sed diam nonumy at volutpat. Sed consectetur <em>suscipit lorem</em> nunc adipiscing elit. Integer commodo tristique odio, quis fringilla ligula aliquet ut. 
-            Maecenas sed justo varius velit imperdiet bibendum et rutrum.</p>
-            
-            <p>Malesuada tortor, nec scelerisque lorem mattis. Nunc et rutrum consetetur sadipscing elitr, sed diam nonumy at volutpat. <strong>Sed consectetur</strong> suscipit lorem nunc adipiscing elit. 
-            Integer commodo tristique odio, quis fringilla ligula aliquet ut. Maecenas sed justo varius velit imperdiet bibendum et rutrum.</p> 
-        </div>
-        
-        <div class="span3">
-        	<h3>Why Choose Us <span class="color-text">?</span></h3>
-            <ul>
-            	<li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
-                <li>Lorem ipsum dolor</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="sep">
-    	<span class="separator"></span>
-    </div> -->
-    
-    <!-- Services Boxes -->
-  <!--  <div class="row">
-    	<div class="span4">
-        	<div class="services-box">
-        		<div class="icon">
-                	<span class="font-icon-cog"></span>
-                </div>
-                <h3>Deployment</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. Ut neque eros, pulvinar eu blandit quis, lacinia nec.</p>
-        	</div>
-        </div>
-        
-        <div class="span4">
-        	<div class="services-box">
-        		<div class="icon">
-                	<span class="font-icon-layer"></span>
-                </div>
-                <h3>Optimization</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. Ut neque eros, pulvinar eu blandit quis, lacinia nec.</p>
-        	</div>
-        </div>
-        
-        <div class="span4">
-        	<div class="services-box">
-        		<div class="icon">
-                	<span class="font-icon-map"></span>
-                </div>
-                <h3>Manages Services</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. Ut neque eros, pulvinar eu blandit quis, lacinia nec.</p>
-        	</div>
-        </div>
-    </div> -->
-    <!-- End Services Boxes -->
-    
-</div>
-</div>
-<!-- End Services Section -->
-
-<!-- Google Map -->
-<div id="map-area">
-    <div class="map" id="map_1" data-mapLat="37.27786" data-mapLon="-121.83786" data-mapZoom="11" data-mapTitle="Contact Me"></div>
-</div>
-<!-- End Google Map -->
-
-<!-- Contact Section -->
-<div id="contact" class="page">
-<div class="container">
-    <!-- Title Page -->
-  <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">Get in Touch</h2>
-               <!-- <h3 class="title-description">We’re currently accepting new client projects. We look forward to serving you.</h3>
-                
-                <div class="page-description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sed ligula odio. Sed id metus felis. Ut pretium nisl non justo condimentum id tincidunt nunc faucibus. 
-                    Ut neque eros, pulvinar eu blandit quis, lacinia nec ipsum. Etiam vel orci ipsum. Sed eget velit ipsum. Duis in tortor scelerisque felis mattis imperdiet. Donec at libero tellus. 
-                    <a href="#">Suspendisse consectetur</a> consectetur bibendum. Pellentesque posuere, ligula volutpat elementum interdum, diam arcu elementum ipsum, vel ultricies est mauris ut nisi.</p>
-                </div> -->
-            </div>
-        </div>
-    </div>
-    <!-- End Title Page -->
-    
-    <!-- Contact Form -->
-    <div class="row">
-    	<div class="span9">
-        
-        	<form id="contact-form" class="contact-form" action="#">
-            	<p class="contact-name">
-            		<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
-                </p>
-                <p class="contact-email">
-                	<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
-                </p>
-                <p class="contact-message">
-                	<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
-                </p>
-                <p class="contact-submit">
-                	<a id="contact-submit" class="submit" href="mailto:me@francescomariaferrari">Send Your Email</a>
-                </p>
-                
-                <div id="response">
-                
-                </div>
-            </form>
-         
-        </div>
-        
-        <div class="span3">
-        	<div class="contact-details">
-        		<h3>Contact Details</h3>
-                <ul>
-                    <li><a href="mailto:me@francescomariaferrari">me@francescomariaferrari.com</a></li>
-                    <li>(408) 466-5538</li>
-                    <li>
-                        Francesco Ferrari
-                       
+            <!-- Article -->
+            <article>
+                <!-- Portfolio items
+                    Params: 
+                        plugin-filter-elements: Defines items for filtering, each item has class which defines filter value.
+                        portfolio-items: Customise portfolio items for hover effect.
+                -->
+                <ul class="thumbnails plugin-filter-elements portfolio-items">
+                    <li class="span4 mix illustration branding">
+                        <a href="#pages/portfolio/project_1.html" data-destination="portfolio-items" data-insert="before">
+                            <!-- Portfolio image -->
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                            
+                            <!-- Portfolio name, activated on hover -->
+                            <div class="portfolio-overlay">
+                                <h4>Vita Worldwide</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="span4 mix branding typography illustration">
+                        <a href="#pages/portfolio/project_2.html" data-destination="portfolio-items" data-insert="before">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                            <div class="portfolio-overlay">
+                                <h4>Kokong Magazine</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="span4 mix photography illustration">
+                        <a href="#pages/portfolio/project_3.html" data-destination="portfolio-items" data-insert="before">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                            <div class="portfolio-overlay">
+                                <h4>Escape The Grid 2</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="span4 mix photography">
+                        <a href="#pages/portfolio/project_4.html" data-destination="portfolio-items" data-insert="before">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                            <div class="portfolio-overlay">
+                                <h4>Avatar</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="span4 mix photography typography branding">
+                        <a href="#pages/portfolio/project_5.html" data-destination="portfolio-items" data-insert="before">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                            <div class="portfolio-overlay">
+                                <h4>A Brighter Horizon</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="span4 mix photography">
+                        <a href="#pages/portfolio/project_6.html" data-destination="portfolio-items" data-insert="before">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                            <div class="portfolio-overlay">
+                                <h4>The Travelers</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="span4 mix illustration branding typography">
+                        <a href="#pages/portfolio/project_7.html" data-destination="portfolio-items" data-insert="before">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                            <div class="portfolio-overlay">
+                                <h4>Tron 3</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="span4 mix photography illustration">
+                        <a href="#pages/portfolio/project_8.html" data-destination="portfolio-items" data-insert="before">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                            <div class="portfolio-overlay">
+                                <h4>Vimeo Staff Picke - Rio</h4>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="span4 mix illustration branding">
+                        <a href="#pages/portfolio/project_9.html" data-destination="portfolio-items" data-insert="before">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                            <div class="portfolio-overlay">
+                                <h4>Adobe Family. 1882</h4>
+                            </div>
+                        </a>
                     </li>
                 </ul>
+            </article>
+            <!-- End Article -->
+            
+            <!-- Footer -->
+            <footer>
+                <div class="show-more-cube">
+                     <a href="#pages/portfolio/readmore.html" data-destination="plugin-filter-elements" data-insert="appendTo" data-action="remove">
+                        <span>Show<br/>More</span>
+                    </a>
+                </div>
+            </footer>
+            <!-- End footer -->
+        </div>
+    </div>
+    <!-- END PAGE | WORK -->
+
+    <!-- PAGE | CLIENTS -->
+    <div class="pages" id="page-clients">
+        <div class="container">
+            <h4 class="line-divider-inline center">Satisfied clients</h4>
+            <!-- Client logos -->
+            <div class="row-fluid">
+                <div class="span2 center">
+                    <img src="http://placehold.it/180x70" alt="Treble">
+                </div>
+                <div class="span2 center">
+                    <img src="http://placehold.it/180x70" alt="Treble">
+                </div>
+                <div class="span2 center">
+                    <img src="http://placehold.it/180x70" alt="Treble">
+                </div>
+                <div class="span2 center">
+                    <img src="http://placehold.it/180x70" alt="Treble">
+                </div>
+                <div class="span2 center">
+                    <img src="http://placehold.it/180x70" alt="Treble">
+                </div>
+                <div class="span2 center">
+                    <img src="http://placehold.it/180x70" alt="Treble">
+                </div>
+            </div>
+            <!-- Short text related to client's -->
+            <div class="row-fluid">
+                <div class="span8 offset2 center smallFontBy08">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    <!-- End Services Form -->
-</div>
-</div>
-<!-- End Contact Section -->
+    <!-- END PAGE | CLIENTS -->
+    
+    <!-- PAGE | FEATURES  -->
+    <div class="pages white paralax" id="page-features">
+        <div class="overlay"></div>
+        <div class="container">
+             <!-- Header -->
+            <header>
+                <h4 class="line-divider">Features</h4>                
+                <h1>What's Inside</h1>
+                <div class="row">
+                    <div class="span8 offset2">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        </p>
+                    </div>
+                </div>
+            </header>
+             <!-- End Header -->
+             
+             <!-- Article -->
+            <article>
+                <!-- Features blocks -->
+                <div class="row-fluid">
+                    <div class="span4 center">
+                        <img src="static/assets/images/pages/features/about01.png" alt="Treble">
+                        <h5>Responsive</h5>
+                        <p class="smallFontBy08 cutBy10">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="span4 center">
+                        <img src="static/assets/images/pages/features/about02.png" alt="Treble">
+                        <h5>Bootstrap based</h5>
+                        <p class="smallFontBy08 cutBy10">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="span4 center">
+                        <img src="static/assets/images/pages/features/about03.png" alt="Treble">
+                        <h5>Easy to customize</h5>
+                        <p class="smallFontBy08 cutBy10">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+                <!-- Testemonials -->
+                <div class="row-fluid">
+                    <div class="span8 offset2">
+                        <div class="quote center">
+                            <div id="quote-slider" class="slide">
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="active item">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        <h5>Happy client</h5>
+                                    </div>
+                                    <div class="item">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        <h5>Happy client</h5>
+                                    </div>
+                                    <div class="item">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        <h5>Happy client</h5>
+                                    </div>
+                                </div>
+                                <!-- Carousel indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#quote-slider" data-slide-to="0" class="active"></li>
+                                    <li data-target="#quote-slider" data-slide-to="1"></li>
+                                    <li data-target="#quote-slider" data-slide-to="2"></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- End Article -->
+        </div>
+    </div>
+    <!-- END PAGE | FEATURES -->
 
-<!-- Twitter Feed -->
-
-<!-- End Twitter Feed -->
-
-<!-- Socialize -->
-<div id="social-area" class="page">
-	<div class="container">
-    	<div class="row">
-            <div class="span12">
-                <nav id="social">
-                    <ul>
-                        <li><a href="https://twitter.com/FerrariInCali" title="Follow Me on Twitter" target="_blank"><span class="font-icon-social-twitter"></span></a></li>
-                        <li><a href="http://instagram.com/francescomferrari" title="Follow Me on Instagram" target="_blank"><span class="font-icon-social-photobucket"></span></a></li>
-                       
-                        <li><a href="https://www.facebook.com/F.M.R.Ferrari" title="Follow Me on Facebook" target="_blank"><span class="font-icon-social-facebook"></span></a></li>
-                       
-                        <li><a href="http://www.linkedin.com/in/fmferrari" title="Follow Me on LinkedIn" target="_blank"><span class="font-icon-social-linkedin"></span></a></li>
+    <!-- PAGE | ABOUT -->
+    <div class="pages" id="page-about">
+        <div class="container">
+            <!-- Header -->
+            <header>
+                <h4 class="line-divider">About</h4>
+                <h1>Meet The Team</h1>
+                <div class="row">
+                    <div class="span8 offset2">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </header>
+            <!-- End Header -->
+            
+            <!-- Article -->
+            <article>
+                <!-- List of people and description with their contact details which are visable on hover -->
+                <ul class="thumbnails about-items">
+                    <li class="span4 center">
+                         <div class="item">
+                            <!-- Team member image -->
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            
+                            <!-- Team memeber details, activated on hover -->
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons sicon-white">
+                                    <a href="#" class="sicon-facebook"><i>Facebook</i></a>
+                                    <a href="#" class="sicon-twitter"><i>Twitter</i></a>
+                                    <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
+                                    <a href="#" class="sicon-youtube"><i>Youtube</i></a>
+                                    <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
+                                </div>
+                            </div>
+                        </div>
                         
+                        <!-- Team member name and function -->
+                        <h5>
+                            Joanna doe<br/>
+                            <small>Creative director</small>
+                        </h5>
+                        
+                        <!-- Team member short info -->
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                        <div class="item">
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons sicon-white">
+                                    <a href="#" class="sicon-facebook"><i>Facebook</i></a>
+                                    <a href="#" class="sicon-twitter"><i>Twitter</i></a>
+                                    <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
+                                    <a href="#" class="sicon-youtube"><i>Youtube</i></a>
+                                    <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h5>
+                            Joanna doe<br/>
+                            <small>Creative director</small>
+                        </h5>
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                        <div class="item">
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons sicon-white">
+                                    <a href="#" class="sicon-facebook"><i>Facebook</i></a>
+                                    <a href="#" class="sicon-twitter"><i>Twitter</i></a>
+                                    <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
+                                    <a href="#" class="sicon-youtube"><i>Youtube</i></a>
+                                    <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h5>
+                            Joanna doe<br/>
+                            <small>Creative director</small>
+                        </h5>
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                        <div class="item">
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons sicon-white">
+                                    <a href="#" class="sicon-facebook"><i>Facebook</i></a>
+                                    <a href="#" class="sicon-twitter"><i>Twitter</i></a>
+                                    <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
+                                    <a href="#" class="sicon-youtube"><i>Youtube</i></a>
+                                    <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h5>
+                            Joanna doe<br/>
+                            <small>Creative director</small>
+                        </h5>
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                         <div class="item">
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons sicon-white">
+                                    <a href="#" class="sicon-facebook"><i>Facebook</i></a>
+                                    <a href="#" class="sicon-twitter"><i>Twitter</i></a>
+                                    <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
+                                    <a href="#" class="sicon-youtube"><i>Youtube</i></a>
+                                    <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h5>
+                            Joanna doe<br/>
+                            <small>Creative director</small>
+                        </h5>
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                    <li class="span4 center">
+                         <div class="item">
+                            <img class="img-circle" src="http://placehold.it/280x280" alt="Treble">
+                            <div class="about-overlay img-circle">
+                                <div class="social-icons sicon-white">
+                                    <a href="#" class="sicon-facebook"><i>Facebook</i></a>
+                                    <a href="#" class="sicon-twitter"><i>Twitter</i></a>
+                                    <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
+                                    <a href="#" class="sicon-youtube"><i>Youtube</i></a>
+                                    <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h5>
+                            Joanna doe<br/>
+                            <small>Creative director</small>
+                        </h5>
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                    </li>
+                </ul>
+            </article>
+            <!-- End Article -->
+        </div>
+    </div>
+    <!-- END PAGE | ABOUT -->
+    
+    <!-- PAGE | TWITTER -->
+    <div class="pages white paralax" id="page-twitter">
+        <!-- Page overlay -->
+        <div class="overlay"></div>
+        
+        <!-- Block content -->
+        <div class="container">
+             <div class="row-fluid">
+                <div class="span8 offset2">
+                    <div class="twitter-devider"></div>
+                    <!-- Load Twitter boostrap container -->
+                    <div class="twitterfeed center slide" id="twitterfeed-slider"></div>
+                    
+                    <!-- Sub title / Name of twitter account -->
+                    <h5 class="center">@TheGridelicous</h5>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- END PAGE | TWITTER -->
+    
+    <!-- PAGE | BLOG -->
+    <div class="pages" id="page-blog">
+        <div class="container">
+            <!-- Header -->
+            <header>
+                <h4 class="line-divider">Blog</h4>
+                <h1>Recent Blog Posts</h1>
+                <div class="row">
+                    <div class="span8 offset2">
+                        <div class="input-append">
+                          <input class="span5" id="appendedInputButton" type="text" placeholder="Search Blog">
+                          <button class="btn btn-primary sicon-search sicon-white" type="button"><i>Search</i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sub menu -->
+                <nav class="submenu">
+                    <ul>
+                        <li>
+                            <a href="./pages/blog/blog.html">All</a>
+                        </li>
+                        <li>
+                            <a href="./pages/blog/blog.html">Technology</a>
+                        </li>
+                        <li>
+                            <a href="./pages/blog/blog.html">Design</a>
+                        </li>
+                        <li>
+                            <a href="./pages/blog/blog.html">Future trends</a>
+                        </li>
+                        <li>
+                            <a href="./pages/blog/blog.html">Photography</a>
+                        </li>
+                        <li>
+                            <a href="./pages/blog/blog.html">Other</a>
+                        </li>
                     </ul>
                 </nav>
-            </div>
+            </header>
+            <!-- End Header -->
+            
+            <!-- Article -->
+            <article>
+                <!-- Blog articles -->
+                <ul class="thumbnails">
+                    <!-- Blog post -->
+                    <li class="span4">
+                    
+                        <!-- Blog image -->
+                        <a href="./pages/blog/blog_1.html">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                        </a>
+                        
+                        <!-- Blog title -->
+                        <h5>
+                            Blog Post Title<br/>
+                            <small>April 10, 2013</small>
+                        </h5>
+                        
+                        <!-- Blog post description -->
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                        
+                        <!-- Blog read more -->
+                        <div class="read-more">
+                            <a href="./pages/blog/blog_1.html">Read More...</a>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <a href="./pages/blog/blog_2.html">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                        </a>
+                        <h5>
+                            Blog Post Title<br/>
+                            <small>April 10, 2013</small>
+                        </h5>
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                        <div class="read-more">
+                            <a href="./pages/blog/blog_2.html">Read More...</a>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <a href="./pages/blog/blog_3.html">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                        </a>
+                        <h5>
+                            Blog Post Title<br/>
+                            <small>April 10, 2013</small>
+                        </h5>
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                        <div class="read-more">
+                            <a href="./pages/blog/blog_3.html">Read More...</a>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <a href="./pages/blog/blog_4.html">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                        </a>
+                        <h5>
+                            Blog Post Title<br/>
+                            <small>April 10, 2013</small>
+                        </h5>
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                        <div class="read-more">
+                            <a href="./pages/blog/blog_4.html">Read More...</a>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <a href="./pages/blog/blog_5.html">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                        </a>
+                        <h5>
+                            Blog Post Title<br/>
+                            <small>April 10, 2013</small>
+                        </h5>
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                        <div class="read-more">
+                            <a href="./pages/blog/blog_5.html">Read More...</a>
+                        </div>
+                    </li>
+                    <li class="span4">
+                        <a href="./pages/blog/blog_6.html">
+                            <img src="http://placehold.it/390x300" alt="Treble">
+                        </a>
+                        <h5>
+                            Blog Post Title<br/>
+                            <small>April 10, 2013</small>
+                        </h5>
+                        <p class="smallFontBy08">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua,consectetur adipisicing elit.</p>
+                        <div class="read-more">
+                            <a href="./pages/blog/blog_6.html">Read More...</a>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+            <!-- End Article -->
+    
+            <!-- Footer -->
+            <footer>
+                <!-- More blog posts -->
+                <div class="show-more-cube">
+                    <a href="./pages/blog/blog.html"><span>All Blog<br/>Posts</span></a>
+                </div>
+            </footer>
+            <!-- End Footer -->
         </div>
     </div>
-</div>
-<!-- End Socialize -->
+    <!-- END PAGE | BLOG -->
+    
+    <!-- PAGE | CONTACT -->
+    <div class="pages black-bg white" id="page-contact">
+        <div class="container">
+            <!-- Header -->
+            <header>
+                <h4 class="line-divider">Contact</h4>
+                <h1>Say hello!</h1>
+                <div class="row">
+                    <div class="span8 offset2">
+                        <p>
+                            We like to create things with fun, open-minded people. Feel free to say hello! We'll respond as soon as possible.
+                        </p>
+                    </div>
+                </div>
+            </header>
+            <!-- End Header -->
+            
+            <!-- Start Article -->
+            <article>
+                <div class="row-fluid">
+                    <!-- Contact form -->
+                    <div class="span6">
+                        <h5>Drop Us A Line</h5>
+                        <form>
+                            <input type="text" class="span12" placeholder="Title" required="required">
+                            <input type="email" class="span12" placeholder="Email" required="required">
+                            <textarea rows="10" class="span12" required="required"></textarea>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                    <!-- End Contact form -->
+                    <!-- Contact information -->
+                    <div class="span5 offset1">
+                        <h5>Meet Us</h5>
+                        <div class="media">
+                            <div class="social-icons sicon-white pull-left">
+                                <a href="#" class="sicon-phone"><i>Phone</i></a>
+                            </div> 
+                            <div class="media-body smallFontBy08">
+                                (+1) 502 964-0393 | (+1) 502 964-0393 (FAX)
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="social-icons sicon-white pull-left">
+                                <a href="#" class="sicon-place"><i>Location</i></a>
+                            </div> 
+                            <div class="media-body smallFontBy08">
+                                1095 Columbus Ave., San Francisco, CA 94133
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="social-icons sicon-white pull-left">
+                                <a href="#" class="sicon-mail"><i>email</i></a>
+                            </div> 
+                            <div class="media-body smallFontBy08">
+                                mail@crollify.com
+                            </div>
+                        </div>
+                        <div class="media">
+                            <div class="social-icons sicon-white pull-left">
+                                <a href="#" class="sicon-clock"><i>Time zone</i></a>
+                            </div> 
+                            <div class="media-body smallFontBy08">
+                                UTC / GMT -5
+                            </div>
+                        </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <h5>Get social</h5>
+                        <div class="social-icons sicon-white bordered">
+                            <a href="#" class="sicon-facebook"><i>Facebook</i></a>
+                            <a href="#" class="sicon-twitter"><i>Twitter</i></a>
+                            <a href="#" class="sicon-linkedin"><i>LinkedIn</i></a>
+                            <a href="#" class="sicon-youtube"><i>Youtube</i></a>
+                            <a href="#" class="sicon-pinterest"><i>Pinterest</i></a>
+                        </div>
+                    </div>
+                    <!-- End Contact information -->
+                </div>
+            </article>
+            <!-- End Article -->
+            
+        </div>
+        
+        <!-- Background map image -->
+        <div id="map-image">
+            <img src="static/assets/images/pages/contact/map_bck.jpg" alt="Treble">
+        </div>
+    </div>
+    <!-- END PAGE | CONTACT -->
+    
+    
+    <!-- LOAD JS FILES -->
+    
+    <!-- Jquery -->
+    <script src="static/assets/js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    
+    <!-- Less and Twitter Bootstrap -->
+    <!-- <script src="assets/js/less-1.3.3.min.js" type="text/javascript"></script> -->
+    <script src="static/assets/js/bootstrap.min.js" type="text/javascript"></script>
+    
+    <!-- Plugins -->
+    <script src="static/assets/js/plugins/jquery.mixitup.min.js" type="text/javascript"></script>
+    <script src="static/assets/js/plugins/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+    <script src="static/static/assets/js/plugins/jquery.tweet.min.js" type="text/javascript"></script>
+    <script src="static/assets/js/plugins/jquery.bxslider.min.js" type="text/javascript"></script>
+    <script src="static/assets/js/plugins/jquery.responsivevideos.js" type="text/javascript"></script>
+    <script src="static/assets/js/plugins/jquery.centralized.js" type="text/javascript"></script>
+    <script src="static/assets/js/plugins/jquery.hashloader.js" type="text/javascript"></script>
+    <script src="static/assets/js/plugins/jquery.fixedonlater.js" type="text/javascript"></script>
+    <script src="static/assets/js/plugins/jquery.nav.js" type="text/javascript"></script>
+    <script src="static/assets/js/plugins/jquery.scrollTo.js" type="text/javascript"></script>
+        
+    
+    <!-- Treble scripts and plugin initialisation -->
+    <script src="static/assets/js/application.js" type="text/javascript"></script>
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-<!-- Footer -->
-<footer>
-	<p class="credits">&copy;2013 Francesco M Ferrari. </p>
-</footer>
-<!-- End Footer -->
-
-<!-- Back To Top -->
-<a id="back-to-top" href="#">
-	<i class="font-icon-arrow-simple-up"></i>
-</a>
-<!-- End Back to Top -->
-
-
-<!-- Js -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
-<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script> <!-- Google Map API -->
-<script src="static/_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
-<script src="static/_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
-<script src="static/_include/js/waypoints.js"></script> <!-- WayPoints -->
-<script src="static/_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-<script src="static/_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
-<script src="static/_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
-<script src="static/_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-<script src="static/_include/js/jquery.tweet.js"></script> <!-- Tweet -->
-<script src="static/_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
-<script src="static/_include/js/main.js"></script> <!-- Default JS -->
-<!-- End Js -->
-<script type="text/javascript">
-
-var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-45382524-1']); _gaq.push(['_trackPageview']);
-
-(function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();
-
-</script>
+        ga('create', 'UA-44061294-1', 'gridelicious.net');
+        ga('send', 'pageview');
+    </script>
 </body>
 </html>

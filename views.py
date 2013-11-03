@@ -9,5 +9,3 @@ if __name__ == '__main__':
 @app.route('/', methods=['GET'])
 def views():
     return render_template('index.html')
-
-
